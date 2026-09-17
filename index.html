@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veri Dedektifi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main class="container">
+    <header>
+      <div>
+        <p class="small-title">11. Sınıf Matematik</p>
+        <h1>Veri Dedektifi</h1>
+        <p class="subtitle">
+          Yeşil alan ve hava kalitesi arasındaki ilişkiyi keşfet.
+        </p>
+      </div>
+
+      <button id="themeButton" type="button">🌙 Gece Modu</button>
+    </header>
+
+    <section class="info-box">
+      <h2>Grafiği incele</h2>
+      <p>
+        AQI değeri düştükçe hava kalitesi iyileşir.
+        K, L, M ve N bölgelerinde yeşil alan artarken AQI değeri düşmektedir.
+        P bölgesi ise genel eğilimin dışındadır.
+      </p>
+    </section>
+
+    <section class="graph-box">
+      <h2>Yeşil Alan Oranı ve Hava Kirliliği</h2>
+
+      <div class="graph">
+        <div class="point k">K<span>(5, 155)</span></div>
+        <div class="point l">L<span>(12, 120)</span></div>
+        <div class="point m">M<span>(20, 85)</span></div>
+        <div class="point n">N<span>(32, 45)</span></div>
+        <div class="point p">P<span>(40, 115)</span></div>
+
+        <p class="x-label">Yeşil Alan Oranı (%) →</p>
+        <p class="y-label">AQI ↑</p>
+      </div>
+    </section>
+
+    <section id="questions"></section>
+
+    <section id="finishBox" class="finish-box">
+      <h2>Tur tamamlandı! 🎉</h2>
+      <p>Doğru karar sayın:</p>
+      <h3 id="scoreText">0 / 3</h3>
+      <button class="restart-button" id="restartButton" type="button">
+        Tekrar Oyna
+      </button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
